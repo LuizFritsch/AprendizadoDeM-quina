@@ -4,7 +4,7 @@ import pandas as pd
 '''
 #Dados do primeiro dataset sobre peso do corpo e peso do cerebro
 '''
-resultado = f.readtable("Dados.txt")
+resultado = f.readtable("DadosPesoCerebroXpesoCorpo.txt")
 
 dados_df = pd.DataFrame(resultado, columns=['index','brainw','bodyw'])
 
