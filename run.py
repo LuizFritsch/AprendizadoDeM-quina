@@ -12,6 +12,6 @@ dados_df = pd.DataFrame(resultado, columns=['index','brainw','bodyw'])
 
 dados_df = dados_df.drop('index',axis=1)
 
-rl = rl.RegressaoLinear(0, 0, dados_df)
+rl = rl.RegressaoLinear(2, 0, dados_df)
 print (rl.retornaFuncaoCusto('brainw','bodyw'))
 
