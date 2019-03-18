@@ -12,8 +12,14 @@ class RegressaoLinear:
 
     def retornaFuncaoCusto(self, column1, column2):
         soma = 0
-        for i in self.dados.itertuples():
-            soma += (self.retornaPredicao(float(i[column1]))-float(i[column2]))**2
+        print 
+        for index, row in self.dados.iterrows():
+            print (row[column1])
+            print ('----')
+            print (row[column2])
+            print ('xxxxxx')
+            print (len(self.dados))
+            soma += float((self.retornaPredicao(float(row[column1]))-float(row[column2]))**2)
         return soma/(2*(len(self.dados)))
 
 

@@ -14,3 +14,4 @@ dados_df = dados_df.drop('index',axis=1)
 
 rl = rl.RegressaoLinear(0, 0, dados_df)
 print (rl.retornaFuncaoCusto('brainw','bodyw'))
+
