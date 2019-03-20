@@ -18,5 +18,8 @@ dados_df = dados_df.drop('index',axis=1)
 rl = rl.RegressaoLinear(2, 0, dados_df, 0.1, 60) 
 #print (rl.retornaFuncaoCusto('brainw','bodyw'))
 print (rl.calculaGradienteDescendente('brainw','bodyw'))
+colors = np.random.rand(62)
+area = (30 * np.random.rand(62))**2  # 0 to 15 point radii
 
-plt.scatter(dados_df['brainw'], dados_df['bodyw']) 
+plt.scatter(dados_df['brainw'], dados_df['bodyw'], s=area, c=colors, alpha=0.5)
+plt.show() 
