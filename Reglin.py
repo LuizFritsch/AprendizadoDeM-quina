@@ -75,7 +75,7 @@ feature scaling=
 xi passe a ser x1-largura
 
 
-alpha = alpha0*e^-lambda(t-tmax)
+alpha = alpha0*e^-lambda(t/tmax)
 
 '''
 
